@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="admin-style.css">
+
+<div class="admin-wrapper">
+    <aside class="admin-sidebar">
+        <div class="admin-logo">Admin<span>Panel</span></div>
+        <ul class="admin-menu">
+            <li class="active" data-tab="dashboard"><i class="fas fa-home"></i> Dashboard</li>
+            <li data-tab="sqa-manager"><i class="fas fa-tasks"></i> SQA Work Manager</li>
+            <li data-tab="update-manager"><i class="fas fa-edit"></i> Roadmap/Todo</li>
+            <li data-tab="cv-requests"><i class="fas fa-user-check"></i> CV Requests</li>
+            <li data-tab="settings"><i class="fas fa-cog"></i> Appearance Settings</li>
+        </ul>
+        <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </aside>
+
+    <main class="admin-main">
+        <header class="admin-header">
+            <h2>Welcome back, Riyad!</h2>
+        </header>
+
+        <section id="dashboard" class="tab-content active">
+            <div class="stats-grid">
+                <div class="stat-card"><h3>12</h3><p>SQA Reports</p></div>
+                <div class="stat-card"><h3>5</h3><p>CV Requests</p></div>
+                <div class="stat-card"><h3>150</h3><p>Site Visitors</p></div>
+            </div>
+        </section>
+
+        <section id="sqa-manager" class="tab-content">
+            <h3>Add New SQA Artifact</h3>
+            <form id="addSqaForm" class="admin-form">
+                <input type="text" placeholder="Title (e.g. Bug Report)" required>
+                <select>
+                    <option>Manual Testing</option>
+                    <option>Automation</option>
+                </select>
+                <textarea placeholder="Description" rows="4"></textarea>
+                <input type="text" placeholder="Link/GIF URL">
+                <button type="submit" class="btn-save">Upload to Portfolio</button>
+            </form>
+        </section>
+
+        <section id="settings" class="tab-content">
+            <h3>Site Appearance</h3>
+            <div class="setting-item">
+                <label>Change Primary Theme Color:</label>
+                <input type="color" id="themeColorPicker" value="#2e8b57">
+            </div>
+            <div class="setting-item">
+                <label>Profile Photo URL:</label>
+                <input type="text" placeholder="Paste image link here...">
+            </div>
+            <button class="btn-save" id="saveSettings">Save Changes</button>
+        </section>
+    </main>
+</div>

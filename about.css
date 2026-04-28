@@ -1,0 +1,99 @@
+/* About Page Specific Styles */
+.about-page { padding: 120px 8% 60px; }
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.profile-frame {
+    flex: 1;
+    position: relative;
+    max-width: 400px;
+}
+
+.profile-frame img {
+    width: 100%;
+    border-radius: 20px;
+    filter: grayscale(20%);
+    border: 1px solid var(--glass-border);
+    z-index: 2;
+    position: relative;
+}
+
+.frame-decor {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.bio-content { flex: 1.5; }
+
+.story-text {
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* CV Request UI */
+.cv-request-box {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px dashed var(--primary-color);
+    margin-top: 30px;
+}
+
+.request-note {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-top: 10px;
+}
+
+/* Timeline UI */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px 0;
+    padding-left: 30px;
+    border-left: 2px solid var(--glass-border);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.time-dot {
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.time-date {
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.time-content h3 { font-size: 1.3rem; margin-bottom: 10px; }
+.time-content p { color: var(--text-dim); }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .about-container { flex-direction: column; text-align: center; }
+    .frame-decor { display: none; }
+}

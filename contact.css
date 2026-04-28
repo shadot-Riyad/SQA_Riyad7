@@ -1,0 +1,70 @@
+/* Contact Page Styles */
+.contact-page { padding: 120px 8% 60px; }
+.contact-header { text-align: center; margin-bottom: 50px; }
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Info Cards */
+.info-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+}
+.info-card:hover { border-color: var(--primary-color); transform: translateY(-5px); }
+.info-card i { font-size: 1.5rem; color: var(--primary-color); margin-bottom: 10px; }
+
+/* Social Grid */
+.social-box { margin-top: 30px; text-align: center; }
+.social-links-grid { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+.s-link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--card-bg);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid var(--glass-border);
+}
+.s-link:hover { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+
+/* Form Styles */
+.contact-form-box {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+}
+.input-group { display: flex; gap: 15px; }
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+#contactForm input:focus, #contactForm textarea:focus { border-color: var(--primary-color); }
+.full-width { width: 100%; }
+
+@media (max-width: 992px) {
+    .contact-container { grid-template-columns: 1fr; }
+    .input-group { flex-direction: column; gap: 0; }
+}

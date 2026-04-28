@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<main class="update-page">
+    <section class="update-header">
+        <h1>Learning <span>Roadmap & Updates</span></h1>
+        <p>আমি বর্তমানে কী শিখছি এবং ভবিষ্যতে আমার লক্ষ্য কী—সব এখানে দেখতে পাবেন।</p>
+    </section>
+
+    <div class="update-container">
+        <div class="roadmap-column">
+            <h2 class="category-title"><i class="fas fa-map-signs"></i> Future Roadmap</h2>
+            <div class="roadmap-box">
+                <div class="roadmap-item active">
+                    <div class="status-icon"><i class="fas fa-spinner fa-spin"></i></div>
+                    <div class="roadmap-text">
+                        <h4>Advanced Automation</h4>
+                        <p>Learning Page Object Model (POM) with Playwright.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="status-icon"><i class="fas fa-clock"></i></div>
+                    <div class="roadmap-text">
+                        <h4>Security Testing</h4>
+                        <p>Understanding OWASP Top 10 and basic Penetration Testing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-title"><i class="fas fa-list-ul"></i> Public Todo & Wishlist</h2>
+            <div class="todo-list">
+                <div class="todo-item done">
+                    <input type="checkbox" checked disabled>
+                    <span>Complete SQA Portfolio Design</span>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" disabled>
+                    <span>Integrate Firebase Admin Panel</span>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" disabled>
+                    <span>Upload 50+ Test Cases for ISP Project</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips-column">
+            <div class="tips-box">
+                <h3><i class="fas fa-lightbulb"></i> Tips & Advice Corner</h3>
+                <p>আপনি কি আমাকে কোনো প্রফেশনাল পরামর্শ দিতে চান? নিচে লিখে দিন!</p>
+                <form id="tipsForm">
+                    <input type="text" placeholder="Your Name/Designation" required>
+                    <textarea placeholder="Write your tips or advice here..." rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Tips</button>
+                </form>
+                
+                <div class="recent-tips">
+                    <h4>Recent Advice:</h4>
+                    <div class="tip-card">
+                        <p>"Focus more on API Automation, it's trending!"</p>
+                        <span>- Senior QA Engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

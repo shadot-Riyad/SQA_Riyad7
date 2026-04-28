@@ -1,0 +1,65 @@
+/* Update Page Styles */
+.update-page { padding: 120px 8% 60px; }
+.update-header { text-align: center; margin-bottom: 50px; }
+
+.update-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+/* Roadmap Items */
+.roadmap-box { margin-bottom: 40px; }
+.roadmap-item {
+    display: flex;
+    gap: 20px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--glass-border);
+}
+.roadmap-item.active { border-color: var(--primary-color); }
+.status-icon { color: var(--primary-color); font-size: 1.2rem; }
+
+/* Todo List */
+.todo-list {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+}
+.todo-item { display: flex; align-items: center; gap: 15px; margin-bottom: 12px; }
+.todo-item.done span { text-decoration: line-through; color: var(--text-dim); }
+
+/* Tips Form */
+.tips-box {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    position: sticky;
+    top: 100px;
+}
+.tips-box h3 { margin-bottom: 15px; color: var(--primary-color); }
+#tipsForm input, #tipsForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: white;
+}
+.recent-tips { margin-top: 30px; }
+.tip-card {
+    background: var(--bg-dark);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+    margin-top: 10px;
+}
+.tip-card span { font-size: 0.8rem; color: var(--primary-color); }
+
+@media (max-width: 992px) {
+    .update-container { grid-template-columns: 1fr; }
+}
